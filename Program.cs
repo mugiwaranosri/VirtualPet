@@ -13,7 +13,8 @@ namespace VirtualPet
             Pet myPet = new Pet(petName, petType);
 
             Console.WriteLine($"Welcome, {myPet.Name} the {myPet.Type}!");
-             bool exit = false;
+
+            bool exit = false;
             while (!exit)
             {
                 Console.WriteLine("\nWhat would you like to do? (feed/play/rest/status/exit): ");
@@ -40,6 +41,13 @@ namespace VirtualPet
                         Console.WriteLine("Invalid action. Please choose feed, play, rest, status, or exit.");
                         break;
                 }
+
+                // Simulate passage of time
+                myPet.Hunger = Math.Min(myPet.Hunger + 1, 10);
+                myPet.Happiness = Math.Max(myPet.Happiness - 1, 0);
+            }
+
+            Console.WriteLine("Thank you for playing!");
         }
     }
 }
