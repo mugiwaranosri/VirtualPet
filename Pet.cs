@@ -22,6 +22,19 @@ namespace VirtualPet
             Health = Math.Min(Health + 1, 10);
             Console.WriteLine($"{Name} has had its meal. Hunger decreased and Health slightly increased.");
         }
+         public void Play()
+        {
+            Happiness = Math.Min(Happiness + 2, 10);
+            Hunger = Math.Min(Hunger + 1, 10);
+            Console.WriteLine($"{Name} has played and is happier now, but a bit hungrier.");
+        }
+
+        public void Rest()
+        {
+            Health = Math.Min(Health + 2, 10);
+            Happiness = Math.Max(Happiness - 1, 0);
+            Console.WriteLine($"{Name} is rested. Health has increased, but happiness has slightly decreased.");
+        }
     }
 }
 
