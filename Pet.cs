@@ -6,9 +6,9 @@ namespace VirtualPet
         public string Type { get; set; }
         public int Hunger { get; set; }
         public int Happiness { get; set; }
-        public int Health { get, set; }
+        public int Health { get; set; }
 
-        public Pet(string name, string type);
+        public Pet(string name, string type)
         {
             Name = name;
             Type = type;
