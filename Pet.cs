@@ -33,7 +33,11 @@ namespace VirtualPet
         {
             Health = Math.Min(Health + 2, 10);
             Happiness = Math.Max(Happiness - 1, 0);
-            Console.WriteLine($"{Name} is rested. Health has increased, but happiness has slightly decreased.");
+            Console.WriteLine($"{Name} is rested. Health has improved, but happiness has slightly decreased.");
+        }
+        public void DisplayStats()
+        {
+            Console.WriteLine($"\nPet Stats: \nName: {Name} \nType: {Type} \nHunger: {Hunger} \nHappiness: {Happiness} \nHealth: {Health}");
         }
     }
 }
