@@ -19,7 +19,7 @@ namespace VirtualPet
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("\nWhat would you like to do with your pet from the given options? (feed/play/rest/status/exit): ");
+                Console.WriteLine("\nWhat would you like to do with your pet from the given options? (Feed/Play/Rest/Status/Exit): ");
                 string action = Console.ReadLine().ToLower();
 
                 switch (action)
@@ -34,7 +34,11 @@ namespace VirtualPet
                         myPet.Rest();
                         break;
                     case "status":
-                        Console.WriteLine($"Pet Stats: \nName: {myPet.Name} \nType: {myPet.Type} \nHunger: {myPet.Hunger} \nHappiness: {myPet.Happiness} \nHealth: {myPet.Health}");
+                        myPet.CheckStatus();
+                        // Console.WriteLine($"Pet Stats: \nName: {myPet.Name} \nType: {myPet.Type} \nHunger: {myPet.Hunger} \nHappiness: {myPet.Happiness} \nHealth: {myPet.Health}");
+                        break;
+                    case "time":
+                        myPet.TimePasses();
                         break;
                     case "exit":
                         exit = true;
@@ -42,12 +46,13 @@ namespace VirtualPet
                     default:
                         Console.WriteLine("Invalid action. Please choose from the options (either feed, play, rest, status) or exit.");
                         break;
+                
                 }
 
-                // Simulate passage of time
+                /* Simulate passage of time
                 myPet.Hunger = Math.Min(myPet.Hunger + 1, 10);
                 myPet.Happiness = Math.Max(myPet.Happiness - 1, 0);
-                //Checking Pet Status
+                Checking Pet Status
                 if (myPet.Hunger >= 10)
                 {
                     Console.WriteLine($"{myPet.Name} is starving!");
@@ -57,7 +62,7 @@ namespace VirtualPet
                 {
                     Console.WriteLine($"{myPet.Name} is very unhappy!");
                     myPet.Health = Math.Max(myPet.Health - 2, 0);
-                }
+                }*/
             }
 
             Console.WriteLine("Thank you for playing! Hope you had a great time with your VirtualPet ");
