@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿///main program
 using System;
 
 namespace VirtualPet
@@ -13,9 +13,11 @@ namespace VirtualPet
             Console.WriteLine("Give your pet a name of your liking: ");
             string petName = Console.ReadLine();
             Pet myPet = new Pet(petName, petType);
+            int hoursPassed = 0;
 
             Console.WriteLine($"Welcome, {myPet.Name} the {myPet.Type}!");
 
+           // Timer timer = new Timer(TimePasses, null, 0, 3600000);//3600000 millisecs is an hour
             bool exit = false;
             while (!exit)
             {
@@ -46,10 +48,24 @@ namespace VirtualPet
 
                 }
 
+                hoursPassed++;
+                Console.WriteLine($"Hours passed: {hoursPassed}");
+               myPet.TimePasses();
+               //myPet.CheckStatus();
+
             }
 
             Console.WriteLine("Thank you for playing! Hope you had a great time with your VirtualPet ");
         }
+
+       /* static void TimePasses(object state)
+        {
+            // Simulate time passing every hour
+            Console.WriteLine("\nTime passes...");
+            Pet pet = new Pet("Placeholder", "Placeholder"); // Replace with actual pet instance
+            pet.TimePasses();
+            pet.CheckStatus();
+        }*/
     }
 }
 

@@ -1,4 +1,6 @@
-﻿namespace VirtualPet
+﻿using System;
+
+namespace VirtualPet
 {
     public class Pet
     {
@@ -21,7 +23,6 @@
             Hunger = Math.Max(Hunger - 2, 0);
             Health = Math.Min(Health + 1, 10);
             Console.WriteLine($"{Name} has had its meal. Hunger decreased and Health slightly increased.\nHunger:{Hunger}\nHealth:{Health}");
-            TimePasses();
         }
         public void Play()
         {
@@ -33,7 +34,6 @@
             Happiness = Math.Min(Happiness + 2, 10);
             Hunger = Math.Min(Hunger + 1, 10);
             Console.WriteLine($"{Name} is playing and is happier now, but a bit hungrier.\nHappiness:{Happiness}\nHunger:{Hunger}");
-            TimePasses();
         }
 
         public void Rest()
@@ -41,7 +41,6 @@
             Health = Math.Min(Health + 2, 10);
             Happiness = Math.Max(Happiness - 1, 0);
             Console.WriteLine($"{Name} is resting. Health has improved, but happiness has slightly decreased.\nHealth:{Health}\nHappiness:{Happiness}");
-            TimePasses();
         }
         public void CheckStatus()
         {
@@ -60,7 +59,7 @@
             }
         }
 
-        private void TimePasses()
+        public void TimePasses()
         {
             Hunger = Math.Min(Hunger + 1, 10);
             Happiness = Math.Max(Happiness - 1, 0);
