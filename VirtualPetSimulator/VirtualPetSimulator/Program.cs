@@ -1,3 +1,4 @@
+﻿// See https://aka.ms/new-console-template for more information
 using System;
 
 namespace VirtualPet
@@ -46,8 +47,8 @@ namespace VirtualPet
                 // Simulate passage of time
                 myPet.Hunger = Math.Min(myPet.Hunger + 1, 10);
                 myPet.Happiness = Math.Max(myPet.Happiness - 1, 0);
-                 //Checking Pet Status
-                 if (myPet.Hunger >= 10)
+                //Checking Pet Status
+                if (myPet.Hunger >= 10)
                 {
                     Console.WriteLine($"{myPet.Name} is starving!");
                     myPet.Health = Math.Max(myPet.Health - 2, 0);
@@ -63,3 +64,4 @@ namespace VirtualPet
         }
     }
 }
+

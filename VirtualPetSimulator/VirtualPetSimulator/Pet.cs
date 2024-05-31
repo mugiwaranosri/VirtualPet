@@ -1,4 +1,4 @@
-namespace VirtualPet
+﻿namespace VirtualPet
 {
     public class Pet
     {
@@ -22,7 +22,7 @@ namespace VirtualPet
             Health = Math.Min(Health + 1, 10);
             Console.WriteLine($"{Name} has had its meal. Hunger decreased and Health slightly increased.");
         }
-         public void Play()
+        public void Play()
         {
             Happiness = Math.Min(Happiness + 2, 10);
             Hunger = Math.Min(Hunger + 1, 10);
