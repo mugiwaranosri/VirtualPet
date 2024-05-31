@@ -7,9 +7,9 @@ namespace VirtualPet
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Virtual Pet Simulator!");
-            Console.WriteLine("Choose a pet type (e.g., cat, dog, rabbit): ");
+            Console.WriteLine("Choose a pet type of your choice(e.g., cat, dog, rabbit): ");
             string petType = Console.ReadLine();
-            Console.WriteLine("Give your pet a name: ");
+            Console.WriteLine("Give your pet a name of your liking: ");
             string petName = Console.ReadLine();
             Pet myPet = new Pet(petName, petType);
 
@@ -18,7 +18,7 @@ namespace VirtualPet
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("\nWhat would you like to do with your pet? (feed/play/rest/status/exit): ");
+                Console.WriteLine("\nWhat would you like to do with your pet from the given options? (feed/play/rest/status/exit): ");
                 string action = Console.ReadLine().ToLower();
 
                 switch (action)
@@ -39,7 +39,7 @@ namespace VirtualPet
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine("Invalid action. Please choose either feed, play, rest, status, or exit.");
+                        Console.WriteLine("Invalid action. Please choose from the options (either feed, play, rest, status) or exit.");
                         break;
                 }
 
@@ -59,7 +59,7 @@ namespace VirtualPet
                 }
             }
 
-            Console.WriteLine("Thank you for playing!");
+            Console.WriteLine("Thank you for playing! Hope you had a great time with your VirtualPet ");
         }
     }
 }
