@@ -37,32 +37,15 @@ namespace VirtualPet
                         myPet.CheckStatus();
                         // Console.WriteLine($"Pet Stats: \nName: {myPet.Name} \nType: {myPet.Type} \nHunger: {myPet.Hunger} \nHappiness: {myPet.Happiness} \nHealth: {myPet.Health}");
                         break;
-                    case "time":
-                        myPet.TimePasses();
-                        break;
                     case "exit":
                         exit = true;
                         break;
                     default:
                         Console.WriteLine("Invalid action. Please choose from the options (either feed, play, rest, status) or exit.");
                         break;
-                
+
                 }
 
-                /* Simulate passage of time
-                myPet.Hunger = Math.Min(myPet.Hunger + 1, 10);
-                myPet.Happiness = Math.Max(myPet.Happiness - 1, 0);
-                Checking Pet Status
-                if (myPet.Hunger >= 10)
-                {
-                    Console.WriteLine($"{myPet.Name} is starving!");
-                    myPet.Health = Math.Max(myPet.Health - 2, 0);
-                }
-                if (myPet.Happiness <= 0)
-                {
-                    Console.WriteLine($"{myPet.Name} is very unhappy!");
-                    myPet.Health = Math.Max(myPet.Health - 2, 0);
-                }*/
             }
 
             Console.WriteLine("Thank you for playing! Hope you had a great time with your VirtualPet ");
