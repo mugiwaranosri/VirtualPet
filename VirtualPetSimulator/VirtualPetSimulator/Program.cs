@@ -12,6 +12,7 @@ namespace VirtualPet
             string petType = Console.ReadLine();
             Console.WriteLine("Give your pet a name of your liking: ");
             string petName = Console.ReadLine();
+            
             Pet myPet = new Pet(petName, petType);
             int hoursPassed = 0;
 
@@ -28,28 +29,31 @@ namespace VirtualPet
                 {
                     case "feed":
                         myPet.Feed();
+                        hoursPassed++;
                         break;
                     case "play":
                         myPet.Play();
+                        hoursPassed++;
                         break;
                     case "rest":
                         myPet.Rest();
+                        hoursPassed++;
                         break;
                     case "status":
                         myPet.CheckStatus();
                         // Console.WriteLine($"Pet Stats: \nName: {myPet.Name} \nType: {myPet.Type} \nHunger: {myPet.Hunger} \nHappiness: {myPet.Happiness} \nHealth: {myPet.Health}");
-                        break;
+                        continue;
                     case "exit":
                         exit = true;
-                        break;
+                        continue;
                     default:
                         Console.WriteLine("Invalid action. Please choose from the options (either feed, play, rest, status) or exit.");
-                        break;
+                        continue;
 
                 }
 
-                hoursPassed++;
-                Console.WriteLine($"Hours passed: {hoursPassed}");
+               
+               Console.WriteLine($"Hours passed: {hoursPassed}");
                myPet.TimePasses();
                //myPet.CheckStatus();
 
@@ -58,14 +62,7 @@ namespace VirtualPet
             Console.WriteLine("Thank you for playing! Hope you had a great time with your VirtualPet ");
         }
 
-       /* static void TimePasses(object state)
-        {
-            // Simulate time passing every hour
-            Console.WriteLine("\nTime passes...");
-            Pet pet = new Pet("Placeholder", "Placeholder"); // Replace with actual pet instance
-            pet.TimePasses();
-            pet.CheckStatus();
-        }*/
+       
     }
 }
 

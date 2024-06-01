@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|c:\\projects\\virtualpet\\virtualpetsimulator\\virtualpetsimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|solutionrelative:virtualpetsimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|c:\\projects\\virtualpet\\virtualpetsimulator\\virtualpetsimulator\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|solutionrelative:virtualpetsimulator\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|c:\\projects\\virtualpet\\virtualpetsimulator\\virtualpetsimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06E1F37-1AAE-4699-8821-8A5511D0C300}|VirtualPetSimulator\\VirtualPetSimulator.csproj|solutionrelative:virtualpetsimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Pet.cs",
               "DocumentMoniker": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\VirtualPetSimulator\\Pet.cs",
               "RelativeDocumentMoniker": "VirtualPetSimulator\\Pet.cs",
               "ToolTip": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\VirtualPetSimulator\\Pet.cs*",
               "RelativeToolTip": "VirtualPetSimulator\\Pet.cs*",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAgwC4AAABvAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAowFkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T19:16:27.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\VirtualPetSimulator\\Program.cs",
               "RelativeDocumentMoniker": "VirtualPetSimulator\\Program.cs",
-              "ToolTip": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\VirtualPetSimulator\\Program.cs*",
-              "RelativeToolTip": "VirtualPetSimulator\\Program.cs*",
-              "ViewState": "AQIAACUAAAAAAAAAAAAQwDUAAAARAAAA",
+              "ToolTip": "C:\\projects\\VirtualPet\\VirtualPetSimulator\\VirtualPetSimulator\\Program.cs",
+              "RelativeToolTip": "VirtualPetSimulator\\Program.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwDcAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T19:14:53.773Z",
               "EditorCaption": ""

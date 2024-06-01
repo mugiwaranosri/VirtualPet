@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VirtualPetSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecd103a0b54528b18ddee500a5a195003b65b182")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c3af42cdf6ae9706fc155e36f15473e65d5154b")]
 [assembly: System.Reflection.AssemblyProductAttribute("VirtualPetSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VirtualPetSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
