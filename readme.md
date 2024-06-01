@@ -140,5 +140,5 @@ TimePasses modifications
 
 Implementing Final methods and conditions if happiness or hunger has extreme end value
 
-Profile URL:
-https://github.com/mugiwaranosri
+Link to video:
+https://youtu.be/JC9mFTyzMnU
