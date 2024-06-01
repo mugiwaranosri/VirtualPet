@@ -1,7 +1,9 @@
 # Overview
+
 This is a console application built in C# that simulates caring for a virtual pet. The application demonstrates fundamental programming concepts such as basic program structure, console I/O, data types, type conversion, and control flow elements.
 
 ## Features
+
 1. **Pet Creation:**
     - Allow the user to choose a pet type (e.g., cat, dog, rabbit) and give it a name.
     - Display a welcome message that includes the pet's type and name.
@@ -25,10 +27,12 @@ This is a console application built in C# that simulates caring for a virtual pe
 ## Getting Started
 
 ### Prerequisites
+
 - .NET SDK
 - Visual Studio or Visual Studio Code
 
 ### Installation
+
 1. Clone the repository:
     ```sh
     git clone https://github.com/yourusername/virtual-pet.git
@@ -50,11 +54,13 @@ This is a console application built in C# that simulates caring for a virtual pe
     ```
 
 ## Usage
+
 1. On starting the application, you will be prompted to choose a pet type and name your pet.
 2. You can perform actions like feeding, playing, and resting to care for your pet.
 3. Check the pet's status to see its hunger, happiness, and health levels.
 4. The passage of time is simulated with each action, affecting the pet's stats over time.
 5. Dont let health or happiness to reduce too much so that some of the pet actions are restricted 
+
 ## Example
 ```
 Welcome to the Virtual Pet game!
@@ -72,11 +78,21 @@ Choose an action: feed, play, rest, status, exit
 Thank you for playing!
 ```
 
-
 ### Commits
 
-
-
-
-
-
+Initial commit
+Create Pet.cs
+Additional functions given to pet class
+Program class is created and error in pet class is solved
+Update Pet.cs
+Update Pet.cs
+Update Program.cs
+Update Program.cs
+Update Program.cs
+Update Pet.cs
+Update Program.cs
+Final VirtualPet Console
+Play restricted when too hungry
+Time Passage is simulated
+TimePasses modifications
+Implementing Final methods and conditions if happiness or hunger has extreme end value
